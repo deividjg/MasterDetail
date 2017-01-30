@@ -104,7 +104,7 @@ public class AlbumListActivity extends AppCompatActivity {
         public void onBindViewHolder(final ViewHolder holder, int position) {
             holder.mItem = mValues.get(position);
             holder.mIdView.setText(mValues.get(position).id);
-            holder.mContentView.setText(mValues.get(position).nombre);
+            holder.mContentView.setText(mValues.get(position).nombre + " - " + mValues.get(position).album);
 
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
